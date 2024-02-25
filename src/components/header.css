@@ -1,0 +1,33 @@
+header .menu {
+  transition: 0.3s;
+}
+header .links {
+  @apply flex flex-col md:flex-row gap-4;
+}
+@media (max-width: 767px) {
+  header .links {
+    display: none;
+  }
+}
+.links.showlinks {
+  @apply flex absolute gap-2 p-3 rounded-md text-sm;
+  top: 100%;
+  background-color: rgb(0 0 0 / 79%);
+  z-index: 99;
+}
+header .right .search {
+  @apply flex items-center;
+  transition: 0.3s;
+}
+header .right .search input {
+  @apply px-1 w-[100px];
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+.showsearch {
+  @apply px-1;
+  border-radius: 3px;
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.534);
+  transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,12 @@
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.705);
+}
+.signin form {
+  @apply absolute flex flex-col items-center text-white rounded-md p-[20px] md:p-[30px];
+  background-color: #000000a1;
+}

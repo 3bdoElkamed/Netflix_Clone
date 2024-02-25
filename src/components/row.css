@@ -1,0 +1,3 @@
+.arrow {
+  @apply absolute w-[40px] h-[40px]  text-white bg-[#ffffff79] rounded-full cursor-pointer;
+}
